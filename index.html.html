@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Obakin | Automotive Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">DAVID OBAKIN</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="assets/docs/RESUME_2026_Automotive.pdf" target="_blank" class="btn">Resume</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>ENGINEERED FOR THE FUTURE.</h1>
+            <p>Mechanical & Automotive Engineer specializing in Powertrain Modeling, Aerodynamics, and EV Systems.</p>
+            <a href="#projects" class="btn-primary">DISCOVER MY WORK</a>
+        </div>
+    </header>
+
+    <section id="experience" class="section">
+        <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+        <div class="experience-card fade-in">
+            <h3>Manufacturing Engineering Intern | BorgWarner</h3>
+            <p class="subtitle">Bellwood, IL</p>
+            <p>Engineered a Simulink-based thermal system model for a closed-loop cooling circuit, applying vehicle-grade thermodynamic and fluid-mechanics calculations to evaluate heat-rejection performance and select the optimal chiller for drive-train equipment.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section dark-section">
+        <h2 class="section-title">FEATURED PROJECTS</h2>
+        <div class="project-grid">
+            
+            <div class="project-card fade-in">
+                <img src="assets/images/placeholder.jpg" alt="Honda Accord Hybrid">
+                <div class="project-info">
+                    <h3>Aerodynamic Drag & Fuel Efficiency</h3>
+                    <p>2015 Honda Accord Hybrid analysis. Excel simulation modeling drag force, road-load power, and MPG sensitivity.</p>
+                    <p class="skills">Skills: Aerodynamic modeling, Data visualization</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="assets/images/placeholder.jpg" alt="Engine Powertrain">
+                <div class="project-info">
+                    <h3>ICE Fuel Consumption & Powertrain Modeling</h3>
+                    <p>Backward engine fuel-rate model (UDDS cycle) and gear-based fuel consumption model using an RSM engine map.</p>
+                    <p class="skills">Skills: ICE power modeling, Gear-ratio logic</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="assets/images/placeholder.jpg" alt="EV Modeling">
+                <div class="project-info">
+                    <h3>EV Motor, Acceleration & Energy Modeling</h3>
+                    <p>Motor torque maps, 0–60 acceleration simulation, and energy-flow modeling for a BMW i3 over the UDDS cycle.</p>
+                    <p class="skills">Skills: EV motor modeling, MPGe calculations</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="assets/images/placeholder.jpg" alt="EV Powertrain">
+                <div class="project-info">
+                    <h3>EV Powertrain Energy & Drive Cycle Modeling</h3>
+                    <p>Backward EV powertrain model calculating wheel, motor, and battery power to estimate range and Wh/mi.</p>
+                    <p class="skills">Skills: Powertrain energy modeling</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="assets/images/placeholder.jpg" alt="Prius Hybrid">
+                <div class="project-info">
+                    <h3>Hybrid Powertrain & SOC Simulation</h3>
+                    <p>2010 Toyota Prius model featuring control logic for power split and SOC tracking validation.</p>
+                    <p class="skills">Skills: Energy management, Control strategy</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="assets/images/placeholder.jpg" alt="EV Charging Robot">
+                <div class="project-info">
+                    <h3>Autonomous EV Charging Robot Arm</h3>
+                    <p>Engineered an EV charging robot arm guiding a four-bar end effector using MATLAB optimization and Arduino C++ control.</p>
+                    <a href="assets/docs/Robot_Arm_Design_Report__David_Obakin (1).pdf" target="_blank" class="text-link">Read Full Report -></a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="assets/images/placeholder.jpg" alt="Chair Design">
+                <div class="project-info">
+                    <h3>Sustainable Lightweight Chair Design</h3>
+                    <p>Optimized a structural chair using FEA to support 103kg while weighing under 800g, built without mechanical fasteners.</p>
+                    <a href="assets/docs/Chair_Design_Report___David_Obakin (2).pdf" target="_blank" class="text-link">Read Full Report -></a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="assets/images/placeholder.jpg" alt="EcoCAR">
+                <div class="project-info">
+                    <h3>Siemens EcoCAR Certification</h3>
+                    <p>Practical application of propulsion systems, CAV technologies, NX design, and Teamcenter.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">TECHNICAL EXPERTISE</h2>
+        <div class="skills-container fade-in">
+            <div class="skill-column">
+                <h4>Domains</h4>
+                <ul>
+                    <li>Powertrain controls & torque-path reasoning</li>
+                    <li>Driveability analysis (ARM/t-ARM, jerk)</li>
+                    <li>EV/HEV/ICE modeling</li>
+                    <li>Road-load & aerodynamic modeling</li>
+                    <li>Calibration-style problem solving</li>
+                </ul>
+            </div>
+            <div class="skill-column">
+                <h4>Tools & Software</h4>
+                <ul>
+                    <li>MATLAB / Simulink</li>
+                    <li>Vector CANape</li>
+                    <li>GT-SUITE</li>
+                    <li>AVL Drive</li>
+                    <li>Excel (Advanced modeling & VBA)</li>
+                    <li>ANSYS Fluent & Autodesk Inventor</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 David Obakin. Engineered in Chicago.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
