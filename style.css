@@ -74,8 +74,8 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    /* Replace with a sleek dark automotive background image if you have one */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/images/hero-bg.jpg') center/cover;
+    /* Updated to use your uploaded image with a dark overlay so the white text stays readable */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('Background%20image.jpg') center/cover;
 }
 
 .hero-content h1 {
