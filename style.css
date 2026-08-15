@@ -268,3 +268,47 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+/* Split Layout for Experience Section */
+.split-layout {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Centers the media vertically with the text */
+}
+
+.experience-text {
+    flex: 1; /* Takes up 50% of the space */
+}
+
+.experience-media {
+    flex: 1; /* Takes up 50% of the space */
+    overflow: hidden;
+}
+
+/* Styling the Images and Videos inside the card */
+.experience-media img,
+.experience-media video {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover; /* Ensures the media fills the space without stretching */
+    border: 1px solid #333; /* Subtle border to match the dark aesthetic */
+    filter: grayscale(40%); /* Keeps it moody; remove if you want full color */
+    transition: filter 0.4s ease;
+}
+
+.experience-card:hover .experience-media img,
+.experience-card:hover .experience-media video {
+    filter: grayscale(0%);
+}
+
+/* Make it stack on smaller screens (Mobile Responsiveness) */
+@media (max-width: 900px) {
+    .split-layout {
+        flex-direction: column;
+    }
+    
+    .experience-media img,
+    .experience-media video {
+        max-height: 250px;
+    }
+}
