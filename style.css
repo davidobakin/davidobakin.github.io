@@ -289,16 +289,19 @@ footer {
 .experience-media video {
     width: 100%;
     height: auto;
-    max-height: 300px;
-    object-fit: cover; /* Ensures the media fills the space without stretching */
-    border: 1px solid #333; /* Subtle border to match the dark aesthetic */
-    filter: grayscale(40%); /* Keeps it moody; remove if you want full color */
-    transition: filter 0.4s ease;
+    /* Increased height so charts are large and readable */
+    max-height: 500px; 
+    /* Changed to 'contain' so absolutely nothing gets cropped out */
+    object-fit: contain; 
+    border: 1px solid #333; 
+    /* Removed the grayscale filter so your data line colors are clearly visible */
+    transition: transform 0.4s ease;
 }
 
+/* Replaced the color-hover effect with a subtle BMW-style zoom */
 .experience-card:hover .experience-media img,
 .experience-card:hover .experience-media video {
-    filter: grayscale(0%);
+    transform: scale(1.02);
 }
 
 /* Make it stack on smaller screens (Mobile Responsiveness) */
@@ -309,6 +312,6 @@ footer {
     
     .experience-media img,
     .experience-media video {
-        max-height: 250px;
+        max-height: 350px;
     }
 }
