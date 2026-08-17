@@ -315,3 +315,51 @@ footer {
         max-height: 350px;
     }
 }
+/* --- Image Gallery Layout for Experience Cards --- */
+.media-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between the top image and the bottom row */
+    width: 100%;
+}
+
+.gallery-main {
+    width: 100%;
+    height: auto;
+    max-height: 350px; 
+    object-fit: cover; /* Ensures the image fills the box without stretching */
+    border: 1px solid #333;
+    transition: transform 0.4s ease;
+}
+
+.gallery-sub {
+    display: flex;
+    gap: 15px; /* Adds space between the two side-by-side images */
+    width: 100%;
+}
+
+.gallery-sub .gallery-img {
+    flex: 1; /* Forces both images to take up exactly 50% of the row */
+    width: 100%;
+    height: 180px; /* Locks the height so they are perfectly level */
+    object-fit: cover; 
+    border: 1px solid #333;
+    transition: transform 0.4s ease;
+}
+
+/* BMW-style subtle zoom hover effect for the gallery */
+.experience-card:hover .gallery-main,
+.experience-card:hover .gallery-img {
+    transform: scale(1.02);
+}
+
+/* Ensure the gallery stacks properly on mobile devices */
+@media (max-width: 900px) {
+    .gallery-sub {
+        flex-direction: column; /* Stacks the side-by-side images on small screens */
+    }
+    .gallery-sub .gallery-img {
+        height: auto;
+        max-height: 250px;
+    }
+}
