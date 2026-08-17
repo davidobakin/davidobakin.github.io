@@ -325,9 +325,10 @@ footer {
 
 .gallery-main {
     width: 100%;
-    height: auto;
-    max-height: 350px; 
-    object-fit: cover; /* Ensures the image fills the box without stretching */
+    /* Replaced 'height: auto' with a fixed height to force a wide landscape shape */
+    height: 260px; 
+    /* Cover ensures the image fills the new rectangle perfectly without squishing */
+    object-fit: cover; 
     border: 1px solid #333;
     transition: transform 0.4s ease;
 }
