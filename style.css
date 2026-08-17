@@ -334,15 +334,16 @@ footer {
 
 .gallery-sub {
     display: flex;
-    gap: 15px; /* Adds space between the two side-by-side images */
+    gap: 15px;
     width: 100%;
 }
 
 .gallery-sub .gallery-img {
-    flex: 1; /* Forces both images to take up exactly 50% of the row */
+    flex: 1 1 0;
+    min-width: 0; /* Keeps video and image perfectly equal in width */
     width: 100%;
-    height: 180px; /* Locks the height so they are perfectly level */
-    object-fit: cover; 
+    height: 220px; /* Adjust this height if you want them taller or shorter */
+    object-fit: cover; /* Crops both cleanly to fit the box without stretching */
     border: 1px solid #333;
     transition: transform 0.4s ease;
 }
