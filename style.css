@@ -323,12 +323,11 @@ footer {
     width: 100%;
 }
 
-.gallery-main {
+/* Top Gallery Image - Increased specificity to override general image rules */
+.experience-media .gallery-main {
     width: 100%;
-    /* Replaced 'height: auto' with a fixed height to force a wide landscape shape */
-    height: 260px; 
-    /* Cover ensures the image fills the new rectangle perfectly without squishing */
-    object-fit: cover; 
+    height: 260px !important; 
+    object-fit: cover !important; 
     border: 1px solid #333;
     transition: transform 0.4s ease;
 }
