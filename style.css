@@ -80,17 +80,68 @@ h1, h2, h3, h4 {
     background-position: center;
     background-repeat: no-repeat;
 }
-.hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    max-width: 800px;
+/* --- Hero Section Content Layout --- */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
 }
 
-.hero-content p {
+.hero-text {
+    flex: 1;
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
     font-size: 1.2rem;
     margin-bottom: 40px;
     color: #aaa;
-    max-width: 600px;
+}
+
+.hero-image {
+    flex: 0 0 300px; /* Locks the image container size */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Ensures your face is perfectly centered */
+    border-radius: 50%; /* Turns the square image into a sleek circle */
+    border: 4px solid #fff; /* High-contrast BMW style border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Adds depth against the background */
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Make it stack gracefully on smaller screens (Mobile) */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column-reverse; /* Puts text on bottom, image on top */
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .hero-image {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .btn-primary {
